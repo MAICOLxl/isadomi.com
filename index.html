@@ -1,54 +1,152 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ISADOMI SRL</title>
+  </head>
+  <body>
+    <header>
+      <img src="PRODUCTOS Y LOGO/LOGO ISADOMI.png" alt="logo" width="350px" />
+      <h3>"En Santo Domingo llueve, pero en tu casa no."</h3>
+    </header>
+    <hr />
+    <br />
 
-<head>
-    <meta charset="UTF-8">
+    <div class="info">
+      <h1>Impermeabilizantes Santo Domingo</h1>
+      <p>
+        Impermeabilizantes Santo Domingo es una empresa especializada en la
+        venta de impermeabilizantes de alta calidad para proteger tus
+        superficies contra la humedad y las filtraciones. Ofrecemos una amplia
+        gama de productos diseñados para satisfacer las necesidades de nuestros
+        clientes, desde impermeabilizantes para techos hasta soluciones para
+        paredes y pisos.
+      </p>
 
-    <title>Impermeabilizantes Santo Domingo</title>
-</head>
+      <br />
+      <h2>¿Por qué elegirnos?</h2>
+      <p>
+        En Impermeabilizantes Santo Domingo, nos comprometemos a ofrecer
+        productos de la más alta calidad a precios competitivos. Nuestro equipo
+        de expertos está siempre disponible para asesorarte en la elección del
+        producto adecuado para tu proyecto. Además, contamos con un servicio de
+        entrega rápida para garantizar que recibas tus productos a tiempo.
+      </p>
+    </div>
+    <br />
+    <hr />
 
-<body>
-    <h1>Impermeabilizantes Santo Domingo</h1>
-    <p>Impermeabilizantes Santo Domingo es una empresa especializada en la venta de impermeabilizantes de alta calidad
-        para proteger tus superficies contra la humedad y las filtraciones. Ofrecemos una amplia gama de productos
-        diseñados para satisfacer las necesidades de nuestros clientes, desde impermeabilizantes para techos hasta
-        soluciones para paredes y pisos.</p>
+    <div class="products">
+      <h2>Nuestros Productos</h2>
+      <ul>
+        <li>
+          <strong>Impermeabilizante Acrílico</strong>
+          <p>
+            Ideal para techos y paredes, proporciona una excelente resistencia
+            al agua y a los rayos UV.
+          </p>
+          <img
+            src="PRODUCTOS Y LOGO/Flex-Seal-Aluminio.jpg"
+            alt=""
+            height="200px"
+          />
+        </li>
+        <li>
+          <strong>Impermeabilizante Elastomérico:</strong>
+          <p>
+            Perfecto para superficies que requieren flexibilidad, como terrazas
+            y balcones.
+          </p>
+          <img
+            src="PRODUCTOS Y LOGO/Copia de Unknown.jpeg"
+            alt=""
+            height="200px"
+          />
+        </li>
+        <li>
+          <strong>Impermeabilizante Cementoso:</strong>
+          <p>
+            Recomendado para áreas con alta humedad, como sótanos y piscinas.
+          </p>
+          <img
+            src="PRODUCTOS Y LOGO/Cemento-Plastico.jpg"
+            alt=""
+            height="250px"
+          />
+        </li>
+        <li>
+          <strong>Impermeabilizante Bituminoso:</strong>
+          <p>
+            Excelente para techos planos y áreas expuestas a condiciones
+            climáticas extremas.
+          </p>
+          <img src="PRODUCTOS Y LOGO/Vodipren-90.jpg" alt="" height="250px" />
+        </li>
+      </ul>
+    </div>
+    <br />
+    <hr />
 
-    <h2>Nuestros Productos</h2>
-    <ul>
-        <li><strong>Impermeabilizante Acrílico:</strong> Ideal para techos y paredes, proporciona una excelente
-            resistencia al agua y a los rayos UV.</li>
-        <li><strong>Impermeabilizante Elastomérico:</strong> Perfecto para superficies que requieren flexibilidad, como
-            terrazas y balcones.</li>
-        <li><strong>Impermeabilizante Cementoso:</strong> Recomendado para áreas con alta humedad, como sótanos y
-            piscinas.</li>
-        <li><strong>Impermeabilizante Bituminoso:</strong> Excelente para techos planos y áreas expuestas a condiciones
-            climáticas extremas.</li>
-    </ul>
-
-    <h2>¿Por qué elegirnos?</h2>
-    <p>En Impermeabilizantes Santo Domingo, nos comprometemos a ofrecer productos de la más alta calidad a precios
-        competitivos. Nuestro equipo de expertos está siempre disponible para asesorarte en la elección del producto
-        adecuado para tu proyecto. Además, contamos con un servicio de entrega rápida para garantizar que recibas tus
-        productos a tiempo.</p>
-
-    <h2>Contáctanos</h2>
-    <p>Si estás interesado en nuestros productos o necesitas asesoramiento, no dudes en contactarnos:</p>
+    <div class="contacts">
+      <h2>Contáctanos</h2>
+      <p>
+        Si estás interesado en nuestros productos o necesitas asesoramiento, no
+        dudes en contactarnos:
+      </p>
+    </div>
 
     <form action="procesar.php" method="post">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-        <label for="correo">Correo Electrónico</label>
-        <input type="email" id="correo" name="correo" required><br><br>
-        <label for="mensaje">Mensaje</label> <br>
-        <textarea id="mensaje" name="mensaje" rows="5" cols="25" required></textarea><br><br>
-        <button type="submit">Enviar Mensaje</button>
+      <label for="nombre">Nombre:</label><br />
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        placeholder="Juan Perez"
+      /><br /><br />
+
+      <label for="correo">Correo Electrónico:</label><br />
+      <input type="email" id="correo" name="correo" required /><br /><br />
+
+      <label for="mensaje" required>Mensaje:</label> <br />
+      <textarea
+        id="mensaje"
+        name="mensaje"
+        rows="5"
+        cols="25"
+        required
+      ></textarea
+      ><br /><br />
+      <button type="submit">Enviar Mensaje</button>
     </form>
-    <br><br>
+    <br /><br />
 
-    <ul>
-        <li><strong>Teléfono: </strong> <a href="https://wa.me/18299840097">WhatsApp</a></li>
-        <li><strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&to=isadomi_s.a1@hotmail.com">Enviar correo</a></li>
-    </ul>
-
-</body>
+    <hr />
+    <footer>
+      <ul>
+        <li>
+          <p><strong>Teléfono: </strong>(829) 984 - 0097</p>
+          <a href="https://wa.me/18299840097"
+            ><img src="PRODUCTOS Y LOGO/icons8-whatsapp.svg" alt="whatsapp"
+          /></a>
+        </li>
+        <li>
+          <strong>Email: </strong>
+          <a
+            href="https://mail.google.com/mail/?view=cm&to=isadomi_s.a1@hotmail.com"
+          >
+            isadomi_s.a1@hotmail.com
+          </a>
+          <p><a
+            href="https://mail.google.com/mail/?view=cm&to=isadomi_s.a1@hotmail.com"
+          >
+            <img
+              src="PRODUCTOS Y LOGO/icons8-correo-electrónico-48.png"
+              alt="email"
+            />
+          </a></p>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
